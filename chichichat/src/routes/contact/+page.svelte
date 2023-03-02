@@ -2,10 +2,10 @@
 
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
-    <title>Home</title>
+    <title>Contact</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="bees.png" type="image/x-icon">
+    <link rel="shortcut icon" href="bees.ico" type="image/x-icon">
     <style>
         body {
   shape-margin: 5% black;
@@ -68,14 +68,13 @@ p {
 
 <body>
     <div class="topnav">
-        <a class="active" href="/">Home</a>
-        <a href="/contact">Contact</a>
+        <a href="/">Home</a>
+        <a class="active" href="/contact">Contact</a>
         <a href="/about">About</a>
         <a href="/dashboard">Dashboard</a>
     </div>
     <div class="content">
-        <p style="margin-left: 15%; font-size: 200%;"><b>Welcome to</b></p>
-        <h1 style="margin-left: 25%; font-size: 60px;">Sassychat Peer and Private Chatting Platform!!</h1>
+        <p><b>Contact Page</b></p>
 
     </div>
 
