@@ -79,9 +79,7 @@ p {
 
     </div>
 
-    <script>
 
-    </script>
 
 </body>
 

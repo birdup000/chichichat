@@ -6,6 +6,15 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="bees.png" type="image/x-icon">
+      <!-- Set the ROOM_ID variable to the roomId that is passed in by server.js -->
+  <script>
+    const ROOM_ID = "<%= roomId %>"
+  </script>
+  <!-- CDN in the peerJS and socket.io libraries -->
+  <script defer src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+  <script src="/socket.io/socket.io.js" defer></script>
+  <!-- Load in script.js, our client-side script -->
+  <script src="/api/videocalling.js" defer></script>
     <style>
         body {
   shape-margin: 5% black;
@@ -62,42 +71,8 @@ p {
 .content {
   color: #4b4949;
 }
-    </style>
 
-</head>
-
-<body>
-    <div class="topnav">
-        <a class="active" href="/">Home</a>
-        <a href="/contact">Contact</a>
-        <a href="/about">About</a>
-        <a href="/dashboard">Dashboard</a>
-    </div>
-    <div class="content">
-        <p style="margin-left: 15%; font-size: 200%;"><b>Welcome to</b></p>
-        <h1 style="margin-left: 25%; font-size: 60px;">Sassychat Peer and Private Chatting Platform!!</h1>
-
-    </div>
-
-    <script>
-
-    </script>
-
-
-
-  <!-- Set the ROOM_ID variable to the roomId that is passed in by server.js -->
-  <script>
-    const ROOM_ID = "<%= roomId %>"
-  </script>
-  <!-- CDN in the peerJS and socket.io libraries -->
-  <script defer src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
-  <script src="/socket.io/socket.io.js" defer></script>
-  <!-- Load in script.js, our client-side script -->
-  <script src="script.js" defer></script>
-  <title>Calling Portion</title>
-  <!-- Make a grid of 300x300 videos  -->
-  <style>
-    body {
+body {
       margin: 0;
       padding: 0;
       display: flex;
@@ -142,8 +117,25 @@ p {
     #muteButton.muted {
       background-color: #4CAF50;
     }
-  </style>
+
+    </style>
+
 </head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="/">Home</a>
+        <a href="/contact">Contact</a>
+        <a href="/about">About</a>
+        <a href="/dashboard">Dashboard</a>
+    </div>
+    <div class="content">
+        <p style="margin-left: 15%; font-size: 200%;"><b>Welcome to</b></p>
+        <h1 style="margin-left: 25%; font-size: 60px;">Sassychat Peer and Private Chatting Platform!!</h1>
+
+    </div>
+
+
 <body>
   <div class="sidenav">
     <a href="/home"><b>Home</b></a>

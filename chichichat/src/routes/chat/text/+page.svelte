@@ -1,6 +1,6 @@
 
 <script>
-  import { io } from '../api/socket.js';
+  import { io } from '..//api/socketio.js';
 
   // Connect to the socket.io server
   io.on('connect', () => {
